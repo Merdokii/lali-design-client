@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'react-datepicker/dist/react-datepicker.css';
+
+body {
+  @apply bg-brand-background text-brand-text font-sans antialiased;
+}
+
+/* Custom styling for react-datepicker to match our theme */
+.react-datepicker {
+  @apply font-sans border-brand-primary !important;
+}
+.react-datepicker__header {
+  @apply bg-brand-light border-b-brand-primary !important;
+}
+.react-datepicker__current-month, .react-datepicker-time__header, .react-datepicker-year-header {
+  @apply text-brand-text !important;
+}
+.react-datepicker__day-name, .react-datepicker__day, .react-datepicker__time-name {
+    @apply text-brand-text !important;
+}
+.react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range {
+  @apply bg-brand-primary text-white !important;
+}
+.react-datepicker__day:hover {
+    @apply bg-brand-light !important;
+}
